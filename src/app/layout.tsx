@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/common/ThemeProvider';
+import Navbar from '@/components/common/Navbar';
 import ClientLayout from './ClientLayout';
 import '../styles/globals.css';
 
@@ -17,10 +18,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
+    <html lang="en">
       <body className={inter.className}>
         <ClientLayout>
-          <ThemeProvider attribute='class'>{children}</ThemeProvider>
+          <ThemeProvider attribute="class" defaultTheme="light">
+            <Navbar>{children}</Navbar>
+          </ThemeProvider>
         </ClientLayout>
       </body>
     </html>
