@@ -45,6 +45,7 @@ export function ButtonToggleTheme() {
             title={item.title}
             key={item.title}
             onClick={item.onClick}
+            className="cursor-pointer"
           >
             {item.title}
           </DropdownMenuItem>

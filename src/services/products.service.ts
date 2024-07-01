@@ -10,12 +10,12 @@ export const productsService = () => {
   const apiService = useApiService();
 
   const getProducts = async (query = {}): Promise<ProductProps[]> => {
-    const response = await apiService.get('products', { params: query });
+    const response = await apiService.get('/products', { params: query });
     return response.data;
   };
 
-  const getProduct = async (id: string): Promise<ProductProps> => {
-    const response = await apiService.get(`products/${id}`);
+  const getProduct = async (id: number): Promise<ProductProps> => {
+    const response = await apiService.get(`/products/${id}`);
     return response.data;
   };
 
@@ -27,15 +27,15 @@ export const productsService = () => {
   };
 
   const updateProduct = async (
-    id: string,
+    id: number,
     data: CreateOrUpdateProductProps,
   ): Promise<ResponseCreateOrUpdateProduct> => {
-    const response = await apiService.put(`products/${id}`, data);
+    const response = await apiService.put(`/products/${id}`, data);
     return response.data;
   };
 
-  const deleteProduct = async (id: string): Promise<ResponseDeleteProduct> => {
-    const response = await apiService.delete(`products/${id}`);
+  const deleteProduct = async (id: number): Promise<ResponseDeleteProduct> => {
+    const response = await apiService.delete(`/products/${id}`);
     return response.data;
   };
 

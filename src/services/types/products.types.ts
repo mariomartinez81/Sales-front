@@ -1,7 +1,7 @@
 import { CategoryProps } from './categories.types';
 
 export interface ProductProps {
-  id: number;
+  id: number | string;
   name: string;
   image: string;
   description: string;
