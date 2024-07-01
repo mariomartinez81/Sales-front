@@ -1,24 +1,139 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Sales-front
 
-First, run the development server:
+## Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+`Sales-front` is a frontend application for managing sales products. It is built with Next.js and TypeScript, and utilizes Tailwind CSS for styling.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Product listing
+- Product details
+- Responsive design
+- API integration with Sales-Api
+- User authentication
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Technologies Used
+
+- **Next.js**: React framework for production
+- **TypeScript**: Strongly typed programming language that builds on JavaScript
+- **Tailwind CSS**: Utility-first CSS framework
+- **Axios**: Promise-based HTTP client
+- **Jest**: JavaScript testing framework
+- **React Testing Library**: Testing utilities for React
+
+## Requirements
+
+- Node.js (version 14 or higher)
+- NPM or Yarn
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/mariomartinez81/Sales-front.git
+   cd Sales-front
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Copy the environment variables example file and configure it:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+## Usage
+
+### Available Scripts
+
+- **Start the server**:
+  ```bash
+  npm run dev
+  # or
+  yarn dev
+  ```
+- **Build for production**:
+  ```bash
+  npm run build
+  # or
+  yarn build
+  ```
+- **Run tests**:
+  ```bash
+  npm test
+  # or
+  yarn test
+  ```
+- **Linting**:
+  ```bash
+  npm run lint
+  # or
+  yarn lint
+  ```
+
+### Screenshots
+
+Here are some screenshots of the application:
+
+#### Home Page
+
+![Home Page](/public/image/screenshots/product_page.png)
+
+#### Add Product
+
+![Product Details](/public/image/screenshots/create_product.png)
+
+#### Validation form
+
+![Home Page](/public/image/screenshots/validation_create_product.png)
+
+#### Actions Product
+
+![Product Details](/public/image/screenshots/actions_product.png)
+
+#### Update Product
+
+![Product Details](/public/image/screenshots/update_product.png)
+
+#### Delete Product
+
+![Home Page](/public/image/screenshots/delete_product.png)
+
+#### Product Details
+
+![Product Details](/public/image/screenshots/details_product.png)
+
+#### Dark Mode
+
+![Product Details](/public/image/screenshots/dark_mode.png)
+
+## Contributing
+
+Contributions are welcome. Please open an issue or a pull request to discuss any changes you would like to make.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
+
+## Contact
+
+For any inquiries, please contact Mario Martínez.
 
 ## Learn More
 
