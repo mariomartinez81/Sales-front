@@ -22,11 +22,16 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - **Axios**: Promise-based HTTP client
 - **Jest**: JavaScript testing framework
 - **React Testing Library**: Testing utilities for React
+- **React Hook Form**: Performant, flexible and extensible forms with easy-to-use validation
+- **Zod**: TypeScript-first schema declaration and validation library
+- **Docker**: Container platform to manage and run services
+- **ESLint** and **Prettier**: Tools to maintain clean and formatted code
 
 ## Requirements
 
 - Node.js (version 14 or higher)
 - NPM or Yarn
+- Docker
 
 ## Installation
 
@@ -86,6 +91,21 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
   # or
   yarn lint
   ```
+
+### Docker
+
+To run the application using Docker:
+
+1. Build the Docker image:
+
+   ```bash
+   docker build -t sales-front .
+   ```
+
+2. Run the Docker container:
+   ```bash
+   docker run -p 3000:3000 sales-front
+   ```
 
 ### Screenshots
 
