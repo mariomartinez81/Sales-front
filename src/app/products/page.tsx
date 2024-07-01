@@ -9,15 +9,12 @@ import useFetchProducts from '@/hooks/products/useFetchProducts';
 import { ProductProps } from '@/services/types/products.types';
 import { useState } from 'react';
 
-interface PageProps {
-  props: any;
-}
-
-const ProductsPage = ({ props }: PageProps) => {
+const ProductsPage = () => {
   const { data: products, isLoading } = useFetchProducts();
   const [productSelected, setProductSelected] = useState<ProductProps | null>(
     null,
   );
+
   const [openModalUpdate, setOpenModalUpdate] = useState(false);
 
   const handleOpenModalCreate = () => {
